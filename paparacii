@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+  // Declare variables to store the diameter and height of the cylinder
+  double diameter, height;
+
+  // Declare a constant to represent pi
+  const double PI = 3.14159;
+
+  // Prompt the user to enter the diameter and height of the cylinder
+  cout << "Enter the diameter of the cylinder: ";
+  cin >> diameter;
+  cout << "Enter the height of the cylinder: ";
+  cin >> height;
+
+  // Calculate the radius of the cylinder
+  double radius = diameter / 2;
+
+  // Calculate the volume of the cylinder
+  double volume = PI * pow(radius, 2) * height;
+
+  // Output the volume of the cylinder
+  cout << "The volume of the cylinder is: " << volume << endl;
+
+  return 0;
+}
